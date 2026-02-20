@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="casualShoes">
+      <h1>CASUAL SHOES</h1>
+      <div class="casualShoesContainer">
+        <div class="casualShoesCard">
+          <div class="image">
+            <img src="Assets/Nike Shoe.png" alt="Nike Shoe" />
+          </div>
+          <div class="cardText">
+            <h2>Nike Shoe</h2>
+            <p>
+              Lorem ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+           
+              
+             <div id="counter">
+                <button onclick="decreaseNum()"><i class="fa-solid fa-minus"></i></button>
+                <span id="display">0</span>
+                <button onclick="increaseNum()"><i class="fa-solid fa-plus"></i></button>
+                <span id="reset" onclick="resetNum()">Reset</span>
+
+             
+            </div>
+            <div class="price">
+                <span><span id="price">234</span>$</span>
+                <span id="totalPrice"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
